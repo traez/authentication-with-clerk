@@ -1,10 +1,12 @@
-import { SignUp } from '@clerk/nextjs';
+import { SignUp } from "@clerk/nextjs";
 
 const SignUpPage = () => {
   return (
     <>
-      <SignUp signInUrl='sign-in'/>
+      <SignUp />
     </>
   );
 };
 export default SignUpPage;
+
+//  <SignUp signInUrl='sign-in'/>

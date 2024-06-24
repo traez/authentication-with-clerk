@@ -52,7 +52,6 @@ In this project, we will buid an authentication system for Next.js using clerk. 
 ### What I learned
   
 - **Referencing Documentation:** It's crucial to reference documentation alongside tutorials to stay updated on recent developments (not covered in the tutorial) and adjust code accordingly. In this project, I encountered several deprecated processes that required documentation lookup for correction, particularly in the middleware and `@clerk` import statements.  
-- **Clerk Bug:** There seems to be a bug in Clerk. When a user exists and attempts to sign up again using GitHub/Google, the return URL redirects endlessly after signup. However Email address signup functions correctly, as Clerk detects existing users.
 - **Next.js Parsing Error:** If you encounter a "Cannot find module 'next/base'" error in your Next.js project, locate the .eslintrc.json file. Replace the existing code: `{ "extends": "next/core-web-vitals" }` with `{ "extends": ["next/babel","next/core-web-vitals"] }`  
 - **Package Installation in Development:** You can install new packages using a separate terminal window while your Next.js application runs in another.  
 - **Environment Variables:** Modern hosting platforms typically offer environment variable management through their dashboards. Use either of `.env` or `.env*.local` , there's no significant difference. But remember to add whichever to your `.gitignore` file.  
